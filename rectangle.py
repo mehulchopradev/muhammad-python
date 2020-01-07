@@ -1,11 +1,9 @@
 # user defined functions
 def area_rectangle(length, breadth):
-    a = length * breadth
-    return a
+    return length * breadth
 
 def perimeter_rectangle(length, breadth):
-    p = 2 * (length + breadth)
-    return p
+    return 2 * (length + breadth)
 
 l = float(input('Enter length: '))
 b = float(input('Enter breadth: '))
