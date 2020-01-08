@@ -1,3 +1,6 @@
+# Module
+# name -> evenodd
+
 n = int(input('Enter n: '))
 
 # remainder = n % 2
