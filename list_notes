@@ -1,0 +1,6 @@
+list
+- order sequence of elements
+- elements can be of any data type
+- a list can have duplicate elements
+- a list can have elements of different type; but it is advised to have all the elements in the list of the same type
+- list is a mutable object
