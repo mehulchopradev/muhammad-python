@@ -4,3 +4,21 @@ list
 - a list can have duplicate elements
 - a list can have elements of different type; but it is advised to have all the elements in the list of the same type
 - list is a mutable object
+- list to represent homogenous data
+[
+    [4 , 2],
+    [6 , 3]
+]
+
+tuple
+- order sequence of elements
+- elements can be of any data type
+- a tuple can have duplicate elements
+- tuple is a immutable object
+- tuple to represent hetrogenous data
+
+set
+- unordered sequence of elements
+- elements can be of any data type. But preferred to have elements of the same type
+- cannot have duplicate elements
+- set is a mutable object

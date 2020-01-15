@@ -34,3 +34,6 @@ class Student:
         else:
             grade = 'F'
         return grade
+
+    def get_name_roll(self):
+        return (self.name, self.roll)

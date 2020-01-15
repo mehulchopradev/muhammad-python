@@ -19,6 +19,15 @@ s1 = Student('mehul', 'm', 10, 90) # RAM (4005)
 
 s2 = Student('jane', 'f', 12, 34) # RAM (4003)
 
+t = s1.get_name_roll()
+''' name = t[0]
+roll = t[1] '''
+name, roll = t # tuple unpacking
+print(name)
+print(roll)
+
+# Student.get_name_roll(s1)
+
 # print(s1)
 # print(s2)
 
