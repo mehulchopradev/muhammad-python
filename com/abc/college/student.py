@@ -18,8 +18,11 @@ class Student:
 
     def get_details(self):
         # self - current object for which this function is being called
-        return 'Name: ' + self.name + '\nRoll: ' + str(self.roll) + '\nGender: ' + self.gender \
-        + '\nMarks: ' + str(self.marks)
+        ''' return 'Name: ' + self.name + '\nRoll: ' + str(self.roll) + '\nGender: ' + self.gender \
+        + '\nMarks: ' + str(self.marks) '''
+        # return 'Name: {0}\nRoll: {1}\nGender: {2}\nMarks: {3}'.format(self.name, self.roll, self.gender, self.marks)
+        return 'Name: {name}\nRoll: {roll}\nGender: {gender}\nMarks: {marks}'\
+            .format(roll=self.roll, name=self.name, gender=self.gender, marks=self.marks)
 
     def get_grade(self):
         marks = self.marks
