@@ -1,4 +1,4 @@
-from com.abc.college.student import Student
+from com.abc.college.student_old import Student
 
 # ordered data structure
 ''' slist = [

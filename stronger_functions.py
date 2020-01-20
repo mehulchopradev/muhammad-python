@@ -35,7 +35,7 @@ def mno():
 
     # rty (mno) -> function object (4003)
     def rty(x):
-        print(x ** 2)
+        print(x ** t)
 
     print(t) # 9
 
@@ -43,5 +43,29 @@ def mno():
     return rty
 
 er = mno()
+# our assumption
+# above when the function returns, the variable t will be destroyed
+
+
 # er (module) -> function object (4003)
 er(5) # 25
+# still contrary to the assumption, the line er(5) works! and it gets the value of t
+# our assumption is wrong in case of inner functions
+# closures
+# an inner function remembers all the variables from the enclosing scope even after the enclosing scope has returned
+
+# pqr (module) -> function object (4001)
+def pqr(fn):
+    # fn (pqr) -> 4005
+    i = 9
+    j = fn(i)
+    return j ** 2
+
+# gtr (module) -> function object (4005)
+def gtr(a):
+    return a - 1
+
+# a function as an argument to another function
+# callback function
+b = pqr(gtr)
+print(b)

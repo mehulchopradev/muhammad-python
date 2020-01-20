@@ -1,4 +1,4 @@
-from com.abc.college.student import Student
+from com.abc.college.student_old import Student
 
 sdict = {
     10: Student(name='mehul', gender='m', roll=10, marks=90),
