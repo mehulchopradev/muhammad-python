@@ -2,7 +2,8 @@
 
 # super class
 # parent class
-class CollegeUser:
+# CollegeUser -> object : Single Inheritance
+class CollegeUser(object): # every class in python implicitly inherits from the object class
     def __init__(self, name, gender):
         # self - (5006 Student object)
         # self - (5004 Professor object)
@@ -18,3 +19,6 @@ class CollegeUser:
         # self - (5004 Professor object)
         # self - any child class object of CollegeUser
         return 'Name: {0}\nGender: {1}'.format(self.name, self.gender)
+
+    def __str__(self):
+        return self.get_details()

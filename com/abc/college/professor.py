@@ -8,3 +8,7 @@ class Professor(CollegeUser):
         # CollegeUser.__init__(self, name, gender)
 
         self.subjects = subjects
+
+    # along with inherited methods can have its own set of methods too
+    def get_subjects(self):
+        return '|'.join(self.subjects)
