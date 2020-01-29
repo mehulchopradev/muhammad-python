@@ -1,0 +1,9 @@
+User enters integer input
+play_input -> n -> int(n) -> i -> print(Odd) -> print('Program ends..')
+
+
+User enter non integer input
+play_input -> n -> int(n) -> ValueError (object) -> python process -> print details of the error
+
+User enter non integer input (handling the error)
+play_input -> n -> int(n) -> ValueError (object) -> play_input -> print details of the error -> print('Program ends..')
